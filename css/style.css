@@ -1,0 +1,455 @@
+* {
+	box-sizing: border-box !important;
+}
+
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::-moz-selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+html *::-moz-selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+*::selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+body {
+	margin: 0px;
+	background: #232526;
+	background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
+	background: -o-linear-gradient(left, #414345, #232526);background: linear-gradient(to right, #414345, #232526);
+	font-family: 'Montserrat', sans-serif;
+	overflow-wrap: break-word;
+}
+
+.container {
+	margin-top: 150px;
+}
+.w_33 {
+	width: 33%;
+}
+
+.navbar {
+	background: #232526;
+	background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
+	background: -o-linear-gradient(left, #414345, #232526);background: linear-gradient(to right, #414345, #232526);
+}
+
+.photographerName {
+	min-height: 30px;
+}
+
+.a_soc_media {
+	border-radius: 30px;
+	margin-right: 10px;
+}
+.navbar_contacts .a_soc_media {
+	display: none;
+}
+
+.col_preview {
+	margin: 20px;
+	position: relative;
+}
+.div_preview {
+	margin-top: 80px;
+}
+.img_preview {
+	padding: 0% 2% 0% 2%;
+}
+
+.inner {
+	width: 92%;
+	height: 96%;
+	left: 4%;
+	top: 2%;
+	border: 1.5px solid rgba(38, 40, 52, 0.7);
+	border-radius: 2px;
+	position: absolute;
+}
+
+.slideContainer {
+	display: none;
+}
+
+.div_about_me {
+	margin-top: 150px;
+	margin-bottom: 100px;
+	background-image: url('https://cdn.glitch.global/146b3f87-d16e-4a95-894c-771537d58f88/pic_me.jpg?v=1659003728407');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.img_me {
+	width: 100%;
+	visibility: hidden;
+}
+
+.div_resume {
+	width: 45%;
+	background-color: rgba(38, 40, 52, 0.7);
+	color: white;
+	position: absolute;
+	margin: 0px 20px 40px 0px;
+	padding: 40px;
+}
+
+.div_height {
+	height: 20px;
+}
+
+.img_soc_media {
+	width: 30px;
+}
+
+.h2_pricing {
+	color: white;
+	font-weight: normal;
+}
+
+.p_pricing {
+	color: darkgrey;
+	font-weight: normal;
+	font-size: 20px;
+	min-height: 30px;
+}
+
+.div_card_pricing {
+	color: #262834;
+	border: 1px solid rgb(168, 149, 108, 0.5);
+}
+
+.div_h4_pricing {
+	background-color: rgba(38, 40, 52, 0.05);
+	border-bottom: 1px solid rgb(168, 149, 108, 0.5);
+}
+
+.font_brown {
+	color: #a8956c;
+}
+.border_brown {
+	border: 1px solid rgb(168, 149, 108, 1);
+}
+
+.div_card-body_pricing {
+	background-color: rgb(168, 149, 108, 0.05);
+}
+.btnOrder {
+	margin: 15px 10px;
+	padding: 10px 15px;
+	min-width: 220px;
+	border: 1px solid #a8956c;
+	font-size: 18px;
+	color: #a8956c;
+}
+
+.form-control {
+	outline: none !important;
+}
+.form-select:focus,
+.form-control:focus {
+	border-color: #a8956c;
+}
+
+#id_gallery {
+	background-color: rgb(168, 149, 108, 0.2) !important;
+}
+
+#id_gallery .card-cover {
+	border: 1px solid rgba(38, 40, 52, 0.7);
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgb(168, 149, 108, 0.5) !important;
+}
+
+.form-check-input:checked{
+	border: 1px solid #a8956c;
+	background-color: #a8956c;
+}
+
+#btnCalculate,
+#btnSubmit  {
+	margin: 15px 10px;
+	padding: 10px 15px;
+	min-width: 220px;
+	border: 1px solid #a8956c;
+	font-size: 18px;
+	color: #a8956c;
+}
+textarea {
+	min-height: 100px !important;
+	overflow-y: scroll;
+}
+
+
+/***********MODAL https://sweetalert2.github.io/#examples************/
+
+.swal2-shown {
+	/*padding и overflow-y - чтобы не скрывался scroll
+	и окно не растягивалось в момент появления модального окна*/
+	padding: 0 !important;
+	overflow: auto;
+}
+.swal2-popup {
+	padding: 20px;
+	height: 200px;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: space-evenly !important;
+	align-items: center !important;
+
+	
+	background: #232526 !important;
+	background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
+	background: -o-linear-gradient(left, #414345, #232526);background: linear-gradient(to right, #414345, #232526);
+	box-shadow: none;
+}
+.swal2-confirm {
+	min-width: 220px;
+	box-shadow: none !important;
+	border: 1px solid #a8956c !important;
+	font-size: 18px;
+	color: #a8956c !important;
+	background-color: transparent !important;
+}
+
+.nav-link,
+.nav-link:focus,
+.nav-link:active {
+	color: #ffffff8C;
+}
+	
+.nav-link:hover {
+	color: #ffffffbf;
+}
+@media (hover:hover) {
+	.div_card_pricing:hover {
+		box-shadow: 4px -4px 10px rgb(168, 149, 108, 0.6) !important;
+	}
+
+	.btnOrder:hover {
+		color: #262834;
+		background-color: #a8956c;
+	
+	}
+	#btnCalculate:hover,
+	#btnSubmit:hover,
+	.swal2-confirm:hover {
+		color: #262834 !important;
+		background-color: #a8956c !important;
+	}
+	
+}
+
+@media all and (max-width:1400px) {
+	.div_about_me {
+		margin-top: 100px;
+	}
+}
+
+@media all and (max-width:991px) {
+	.nav-link {
+		font-size: 13px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.navbar_contacts .nav-link {
+		display: none;
+	}
+	.a_soc_media {
+		border-radius: 28px;
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+	.navbar_contacts .a_soc_media {
+		display: unset;
+	}
+	.div_about_me {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.div_about_me h3 {
+		font-size: 16px;
+	}
+	.div_about_me p {
+		font-size: 14px;
+	}
+	.div_resume {
+		margin: 0px 10px 20px 0px;
+		padding: 16px;
+	}
+	.div_height {
+		height: 12px;
+	}
+	.img_soc_media {
+		width: 28px;
+	}
+}
+
+@media all and (max-width:800px) {
+	.container {
+		margin-top: 100px;
+	}
+	.col_preview {
+		margin: 10px;
+	}
+	.h4_pricing {
+		font-size: 20px;
+	}
+	.navbar-brand {
+		font-size: 16px;
+	}
+	.photographerName {
+		min-height: 17px;
+	}
+	.div_about_me {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	.div_about_me h3 {
+		font-size: 14px;
+	}
+	.div_about_me p {
+		font-size: 12px;
+		margin-bottom: 8px;
+	}
+	.div_resume {
+		width: 50%;
+		margin: 0px 10px 10px 0px;
+		padding: 10px;
+		line-height: 1.4;
+	}
+	.div_height {
+		display: none;
+	}
+	#totalPrice {
+	min-height: 50px;
+	}
+}
+@media all and (max-width:767px) {
+	.nav-link {
+		font-size: 16px;
+	}
+}
+@media all and (max-width:575px) {
+	.navbar-brand {
+		font-size: 15px;
+	}
+	.div_resume {
+		width: 60%;
+	}
+	.h4_pricing {
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width:500px) {
+	.container {
+		margin-top: 60px;
+	}
+	.div_preview {
+		display: none;
+	}
+	.slideContainer {
+		margin-top: 80px;
+		display: block;
+	}
+}
+
+@media all and (max-width:450px) {
+	
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	.navbar-brand {
+		font-size: 14px;
+	}
+	.photographerName {
+		min-height: 15px;
+	}
+	.div_about_me {
+		background: none;
+		display: unset;
+	}
+	.img_me {
+		visibility: visible;
+	}
+	.div_resume {
+		width: 100%;
+		margin: 0px;
+		position: relative;
+		line-height: 1.5;
+	}
+	.div_resume nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.div_resume h3 {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 14px;
+		font-size: 18px;
+	}
+	.div_resume p {
+		text-align: justify;
+		text-indent: 10px;
+		font-size: 15px;
+	}
+	.display_none {
+		display: none !important;
+	}
+}
+
+@media all and (max-width:330px) {
+	.navbar-brand {
+		font-size: 11px;
+	}
+	.photographerName {
+		min-height: 12px;
+	}
+	.a_soc_media {
+		border-radius: 22px;
+	}
+	.img_soc_media {
+		width: 22px;
+	}
+	.btnOrder {
+		margin: 0px;
+		margin-bottom: 10px;
+		padding: 8px;
+		min-width: 180px;
+		width: 100%;
+		font-size: 16px;	
+	}
+	.form-check-label {
+		font-size:  14px;
+	}
+	.p_pricing {
+		font-size: 16px;
+	}
+	#btnCalculate,
+	#btnSubmit  {
+		min-width: 180px;
+		width: 100%;
+		font-size: 16px;
+	}
+}
