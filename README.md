@@ -2,7 +2,7 @@
 <a href="https://photographer-mark-kataev.glitch.me/"> https://photographer-mark-kataev.glitch.me </a>
 
 <div align="center">
-  <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/picPreview_2.png">
+  <img src="src/pics/preview.png">
 </div>
 <br>
 
